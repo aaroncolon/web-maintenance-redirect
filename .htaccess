@@ -1,0 +1,12 @@
+# Don't forget to turn on the rewrite engine
+#RewriteEngine on
+
+# Maintenance Redirection
+# Replace 555\.555\.555\.555 with your own IP address
+# Uncomment first conditional to turn off the redirection
+# RewriteCond %{REQUEST_URI} ^$a
+#RewriteCond %{REQUEST_URI} !maintenance.html$
+#RewriteCond %{REQUEST_FILENAME} !(styles|images).+$
+#RewriteCond %{REMOTE_ADDR} !^555\.555\.555\.555$
+#RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1$
+#RewriteRule (.*) /maintenance.html [R=302,L]
